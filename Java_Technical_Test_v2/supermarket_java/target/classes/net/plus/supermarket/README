@@ -45,10 +45,10 @@ CheckOutService->getItemQtyMap()
 		Creating a map to identify the items purchased and it's quantity
 		Using below map For SpecialOffer scenarios(Ex:If D is purchased with an 'A' we need to identify how many A's are present in Request)
 
-CheckOutService->comboOfferLogic()
+ComboOfferLogic->doOfferLogic()
 	Checks if the combo offer item mentioned in DB is ordered in same order .If yes combo offer price for that many items will be applied.
 
-CheckOutService->normalOfferLogic()
+NormalOfferLogic->doOfferLogic()
 	Will identify how many times of the best offer available can be applied to the inputed quantity.
 	Since the list is sorted with priority Index  the best offer will get applied first.
 
